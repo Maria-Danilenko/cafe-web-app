@@ -51,9 +51,7 @@ function AddProviderWindow({ show, onClose }) {
               type="datetime-local"
               value={date_of_contract_sign}
               onChange={(e) => setDateOfContractSign(e.target.value)}
-              //max={new Date().toISOString().slice(0, 16)}
               max={maxDateTime}
-
             />
           </Form.Group>
           <Form.Group controlId="ingredients_count">

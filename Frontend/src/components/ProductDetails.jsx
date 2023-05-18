@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-import { getAllDishes } from '../api/api';
+import { getAllDishes, getDishIngredient } from '../api/api';
 import styles from '../styles/productDetails.module.css'
-import { getDishIngredient } from '../api/api'
 
 const dishImgId = {
   1: 'https://focus.ua/static/storage/thumbs/1088x/0/bb/1d6a53de-c72a745d96916983bef0b1236f40abb0.jpg',

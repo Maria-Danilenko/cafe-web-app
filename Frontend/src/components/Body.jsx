@@ -59,15 +59,11 @@ function useProducts(initialValue) {
 
 export default function Body() {  
   const dishes = useDishes();
-
   const [products, addProduct, deleteProduct] = useProducts(dishes);
-
   const { filteredProducts, filterProducts, resetFilter } = useProductFilter(dishes);
   const categories = [...new Set(dishes.map((product) => product.type_id))];
-
   const location = useLocation();
   const { key } = location;
-
 
   useEffect(() => {
     resetFilter();

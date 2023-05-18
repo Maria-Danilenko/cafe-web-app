@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Layout } from "antd";
-import ProvidersList from "./ProvidersList";
 import { Button } from 'react-bootstrap';
+import ProvidersList from "./ProvidersList";
 import AddProviderWindow from "./AddProviderWindow";
 import EditProviderWindow from './EditProviderWindow'
 

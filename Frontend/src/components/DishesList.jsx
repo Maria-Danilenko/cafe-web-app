@@ -45,7 +45,6 @@ const DishesList = ({ onEdit }) => {
       key: "actions",
       render: (text, record) => (
         <span>
-          {/* <Button type="warning" onClick={() => handleEdit(record)}> */}
           <Button type="primary" ghost style={{ borderColor: "blue" }}  onClick={() => onEdit(record.id)}>
             Edit
           </Button>
@@ -66,7 +65,6 @@ const DishesList = ({ onEdit }) => {
 
   ];
 
-  // return <Table columns={columns} dataSource={products} />;
   return (
     <Table columns={columns}
       dataSource={products.map((product) => ({

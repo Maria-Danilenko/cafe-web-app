@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Layout } from "antd";
-import DishesList from "./DishesList";
 import { Button } from 'react-bootstrap';
+import DishesList from "./DishesList";
 import AddDishWindow from "./AddDishWindow";
 import EditDishWindow from './EditDishWindow'
 

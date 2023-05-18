@@ -10,7 +10,7 @@ function formatDate(date) {
   return formattedDate.substring(0, cutIndex);
 }
 
-const SalesList = ({ onEdit }) => {
+const SalesList = () => {
   const [sales, setSales] = useState([]);
   const [modalVisible, setModalVisible] = useState(false);
   const [selectedSale, setSelectedSale] = useState(null);

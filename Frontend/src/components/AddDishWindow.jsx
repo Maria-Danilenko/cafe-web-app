@@ -9,7 +9,6 @@ function AddProductWindow({ show, onClose }) {
   const [price, setPrice] = useState(1);
   const [type_id, setTypeId] = useState(1);
 
-
   const handleSubmit = (event) => {
     event.preventDefault();
   
