@@ -1,0 +1,45 @@
+.main{
+    padding-left: 10px;
+    padding-top: 10px;
+}
+.sdFoodBoxes {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 30%;
+    margin: 15px 10px 15px 15px;
+    max-width: 160px;
+    min-width: 160px;
+    min-height: 215px;
+    max-height: 215px;
+    text-align: center;
+    position: relative;
+    padding: 10px 10px 45px 10px;    
+    justify-content: center;
+    align-self: flex-start;
+}
+
+.sdFoodScreenMain {
+    float: left;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.addProductBtn {
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    margin: auto; 
+}
+.textContainer {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -moz-box;
+    -moz-box-orient: vertical;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    line-clamp: 3;
+    box-orient: vertical;
+  }
+  
