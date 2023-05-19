@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.CodeAnalysis;
 using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
 using WebApplication1.DataContext;
@@ -148,6 +149,20 @@ namespace WebApplication1.Controllers
                 }
                 return Ok(ingredients.ToArray());
             }
+        }
+
+        [HttpGet("GetDishCount")]
+        public ActionResult<string[]> GetDishCount()
+        {
+            SqlConnection conn = new SqlConnection("Server=DESKTOP-GF8REUK\\SQLEXPRESS;Database=Cafe;Trusted_Connection=true;Encrypt=False");
+
+            string command = "select p from dbo.getCount()";
+            SqlCommand cmd = new SqlCommand(command, conn);
+            cmd.CommandType = System.Data.CommandType.Text;
+            conn.Open();
+            var result = cmd.ExecuteScalar().ToString();
+            conn.Close();
+            return Ok(new { result });
         }
 
         private bool DishExists(int id)

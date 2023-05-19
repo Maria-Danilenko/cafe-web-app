@@ -100,6 +100,21 @@ export const getTypeByTypeId = async (id) => {
   }
 };
 
+export const getDishCount = async () => {
+  try {
+    const token = localStorage.getItem('token');
+    const response = await fetch(`${API_URL}/api/Dishes/GetDishCount`, {
+      headers: {
+        Authorization: `Bearer ${token}`,
+      },
+    });
+    const data = await response.json();
+    return data.result;
+  } catch (error) {
+    console.log(error);
+  }
+};
+
 export const getAllProviders = async() => {
   try {
     const token = localStorage.getItem('token');

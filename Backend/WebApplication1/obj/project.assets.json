@@ -10939,11 +10939,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Rin\\source\\repos\\WebApplication1\\WebApplication1\\WebApplication1.csproj",
+      "projectUniqueName": "D:\\cafe-web-app\\Backend\\WebApplication1\\WebApplication1.csproj",
       "projectName": "WebApplication1",
-      "projectPath": "C:\\Users\\Rin\\source\\repos\\WebApplication1\\WebApplication1\\WebApplication1.csproj",
+      "projectPath": "D:\\cafe-web-app\\Backend\\WebApplication1\\WebApplication1.csproj",
       "packagesPath": "C:\\Users\\Rin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Rin\\source\\repos\\WebApplication1\\WebApplication1\\obj\\",
+      "outputPath": "D:\\cafe-web-app\\Backend\\WebApplication1\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Rin\\AppData\\Roaming\\NuGet\\NuGet.Config",
